@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <script>
+        function sendmessage(){
+            alert("Your response has been Received.");
+        }
+        function letswork(){
+            alert("We will contact you soon.");
+        }
+    </script>
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+        body {
+            margin: 0;
+            font-family: 'Poppins';
+        }
+        .logo {
+            height: 80px;
+        }
+        .wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 4.1rem;
+            margin: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+            font-size: 1.6rem;
+        }
+        nav ul li a:hover {
+            font-weight: bold;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2em;
+        }
+        h1 {
+            font-size: 5.2rem;
+            font-family: 'Playfair Display';
+            font-weight: normal;
+            margin: 0;
+        }
+        .subhead {
+            font-size: 1.8rem;
+        }
+        p.portfoliohead {
+            font-size: 4.2rem;
+            margin-top: 0.2em;
+            margin-bottom: 10px;
+            font-weight: 200;
+            line-height: 100%;
+        }
+        p.details {
+            font-size: 1.4rem;
+            margin: 0;
+        }
+        .cta-container {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .primary-cta{
+            background-color: #ad0909;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            border-radius: 1.9em;
+            padding: 1em 2em;
+            display: inline-block;
+        }
+        .primary-cta:hover{border: 2px solid black;}
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: -0.2rem;
+            margin-bottom: 1.5em;
+        }
+        .image-item {
+            width: 300px;
+            margin-top: 27px;
+        }
+        .image-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: .8em;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Additional Styles for New Sections */
+        section {
+            margin-top: 2rem;
+        }
+        section h2 {
+            font-size: 3rem;
+            margin-bottom: 0;
+        }
+        section p {
+            font-size: 1.6rem;
+        }
+
+        #about, #education {
+            background-color: #fff5ed;
+        }
+
+        form {
+            margin-top: 1rem;
+            text-align: left;
+        }
+        label {
+            display: block;
+            font-size: 1.4rem;
+            margin-top: 0.5rem;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            font-size: 1.4rem;
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        input[type="submit"] {
+            background-color: #ad0909;
+            color: white;
+            font-size: 1.6rem;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="#"><img class="logo" src="portfoliologo.png" alt="My Logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Welcome to My Portfolio</h1>
+            <p class="portfoliohead">I am a Web Developer & Designer</p>
+            <p class="details">
+                I create stunning websites and designs to bring your ideas to life.
+            </p>
+            <div class="cta-container">
+                <a href="#" class="primary-cta" onclick="letswork()">Let's Work Together</a> <!-- Primary button -->
+            </div>
+            <section><h2 id="projects" >Projects</h2></section>
+            <section class="image-container">
+                
+                <div class="image-item">
+                    <img src="project-image1.jpg" alt="Project Image 1">
+                </div>
+                <div class="image-item">
+                    <img src="project-image2.jpg" alt="Project Image 2">
+                </div>
+                <div class="image-item">
+                    <img src="project-image3.jpg" alt="Project Image 3">
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about">
+                <h2>About Me</h2>
+                <p>
+                    I'm a highly skilled leader with a strong background in front-end development. I excel in challenging environments and am dedicated to driving success through problem-solving and innovation.
+                </p>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education">
+                <h2>Education</h2>
+                <p>I earned my Bachelor's degree in Computer Applications (BCA) from St. John's College in Palyamkottai, affiliated with Manonmaniam Sundaranar University. Naan Mudhalvan has been instrumental in my career in front-end development.</p>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <p>
+                    If you'd like to get in touch with me, please use the contact form below:
+                </p>
+                <form action="process_contact_form.php" method="post">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <input onclick="sendmessage()" type="submit" value="Send Message">
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
